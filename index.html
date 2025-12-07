@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 推箱子 (100+ Levels)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>推箱子 Web 版</h1>
+        <div class="info-panel">
+            <span>关卡: <b id="level-display">1</b></span>
+            <span>步数: <b id="step-display">0</b></span>
+        </div>
+        
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="controls">
+            <button onclick="prevLevel()">上一关</button>
+            <button onclick="resetLevel()">重置 (R)</button>
+            <button onclick="undoMove()">撤销 (Z)</button>
+            <button onclick="nextLevel()">下一关</button>
+        </div>
+        <div class="instructions">
+            <p>使用 <b>方向键</b> 或 <b>WASD</b> 移动</p>
+            <p>目标：把所有箱子 📦 推到红点 🔴 上</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
